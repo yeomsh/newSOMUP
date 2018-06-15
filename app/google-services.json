@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "325977210985",
+    "firebase_url": "https://somup-d21fe.firebaseio.com",
+    "project_id": "somup-d21fe",
+    "storage_bucket": "somup-d21fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325977210985:android:818b6537cdaa1b51",
+        "android_client_info": {
+          "package_name": "com.example.kimsy.somup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325977210985-p5sadbf282uec1clsbm123sv0gna6dd0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kimsy.somup",
+            "certificate_hash": "e3cb53062dc7d122d9965c5d2416eb5d8191b5c6"
+          }
+        },
+        {
+          "client_id": "325977210985-rhe6vnc33ca0di1lu7m2r66iep9747kn.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "325977210985-rhe6vnc33ca0di1lu7m2r66iep9747kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhhHkZeTCHXRFdoFS0z8XvO-cRVQbBwKo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325977210985-rhe6vnc33ca0di1lu7m2r66iep9747kn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
