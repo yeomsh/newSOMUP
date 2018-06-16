@@ -11,9 +11,9 @@ import java.util.ArrayList;
 
 public class MyListAdapter extends BaseAdapter {
     Context context;
-    ArrayList<com.example.iuhoo.myapplication.list_item> list_itemArrayList;
+    ArrayList<com.example.kimsy.somup.list_item> list_itemArrayList;
 
-    public MyListAdapter(Context context, ArrayList<com.example.iuhoo.myapplication.list_item> list_itemArrayList) {
+    public MyListAdapter(Context context, ArrayList<com.example.kimsy.somup.list_item> list_itemArrayList) {
         this.context = context;
         this.list_itemArrayList = list_itemArrayList;
     }

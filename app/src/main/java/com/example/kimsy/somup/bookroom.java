@@ -21,7 +21,7 @@ public class bookroom extends AppCompatActivity {
     private TextView mTextMessage;
     ListView listView;
     com.example.kimsy.somup.MyListAdapter myListAdapter;
-    public ArrayList<com.example.iuhoo.myapplication.list_item> list_itemArrayList;
+    public ArrayList<com.example.kimsy.somup.list_item> list_itemArrayList;
     Button click_btn;
     Button click_btn2;
     EditText input1;
@@ -51,10 +51,10 @@ public class bookroom extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bookroom);
         listView = (ListView)findViewById(R.id.Listview);
-        list_itemArrayList = new ArrayList<com.example.iuhoo.myapplication.list_item>();
-        list_itemArrayList.add(new com.example.iuhoo.myapplication.list_item("JAVASCRIPT",1 ,"123"));
-        list_itemArrayList.add(new com.example.iuhoo.myapplication.list_item("ASDF",1,"2,200"));
-        list_itemArrayList.add(new com.example.iuhoo.myapplication.list_item("PyTHon",1,"ii,iii"));
+        list_itemArrayList = new ArrayList<com.example.kimsy.somup.list_item>();
+        list_itemArrayList.add(new com.example.kimsy.somup.list_item("JAVASCRIPT",1 ,"123"));
+        list_itemArrayList.add(new com.example.kimsy.somup.list_item("ASDF",1,"2,200"));
+        list_itemArrayList.add(new com.example.kimsy.somup.list_item("PyTHon",1,"ii,iii"));
 
         click_btn = (Button)findViewById(R.id.button);
         click_btn2 = (Button)findViewById(R.id.button2);
@@ -97,7 +97,7 @@ public class bookroom extends AppCompatActivity {
 
         Intent intent = getIntent();
         if(intent.getExtras() != null){
-            list_itemArrayList.add(new com.example.iuhoo.myapplication.list_item(intent.getStringExtra("name").toString(),intent.getIntExtra("amount",0),intent.getStringExtra("price").toString()));
+            list_itemArrayList.add(new com.example.kimsy.somup.list_item(intent.getStringExtra("name").toString(),intent.getIntExtra("amount",0),intent.getStringExtra("price").toString()));
         }
 
     }

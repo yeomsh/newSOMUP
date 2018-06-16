@@ -17,4 +17,9 @@ public class CurriculumActivity extends AppCompatActivity {
         Intent intent=new Intent(this, SpecificActivity.class);
         startActivity(intent);
     }
+
+    public void GoToSearch(View v){
+        Intent intent=new Intent(this, SearchActivity.class);
+        startActivity(intent);
+    }
 }

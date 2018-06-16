@@ -1,4 +1,4 @@
-package com.example.iuhoo.myapplication;
+package com.example.kimsy.somup;
 
 public class list_item {
     private String bookname;
