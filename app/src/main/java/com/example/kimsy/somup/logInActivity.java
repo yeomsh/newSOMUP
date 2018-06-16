@@ -33,6 +33,7 @@ public class logInActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot data : dataSnapshot.getChildren()) {
+
                     Log.v("students", data.getKey() + " : " + data.getValue());
                 }
             }

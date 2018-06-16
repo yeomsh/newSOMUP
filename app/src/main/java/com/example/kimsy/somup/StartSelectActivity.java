@@ -50,6 +50,7 @@ public class StartSelectActivity extends AppCompatActivity {
         });
 
         Intent intent=new Intent(this, CurriculumActivity.class);
+        intent.putExtra("ID",string);
         startActivity(intent);
 
     }

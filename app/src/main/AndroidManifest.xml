@@ -37,7 +37,8 @@
             android:name=".CurriculumActivity"
             android:screenOrientation="landscape" />
         <activity android:name=".SpecificActivity" />
-        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".list_view_item"></activity>
     </application>
 
 </manifest>
