@@ -46,7 +46,7 @@ public class SearchActivity extends AppCompatActivity {
     ArrayList<Subject> list;
     String str1;
     String str2;
-    String str3="null";
+    String str3;
     ImageView image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

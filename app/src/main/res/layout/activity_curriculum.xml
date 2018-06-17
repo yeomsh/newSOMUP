@@ -19,17 +19,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_menu_search" />
 
-    <ScrollView
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
             <android.support.constraint.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:isScrollContainer="true"
                 android:padding="5px"
                 android:scrollbarAlwaysDrawHorizontalTrack="false"
@@ -37,6 +37,608 @@
                 android:scrollbarSize="5px"
                 android:scrollbarStyle="outsideInset"
                 android:scrollbars="horizontal|vertical">
+
+                <Button
+                    android:id="@+id/sbutton45"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="716dp"
+                    android:layout_marginStart="716dp"
+                    android:background="@drawable/sub_btn_wow"
+                    android:onClick="GoToMySearch"
+                    android:text="졸업프로젝트2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.644" />
+
+                <Button
+                    android:id="@+id/sbutton44"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="880dp"
+                    android:layout_marginStart="880dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="UX디자인"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.555" />
+
+                <Button
+                    android:id="@+id/sbutton43"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="884dp"
+                    android:layout_marginStart="884dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="무선네트워크"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.444" />
+
+                <Button
+                    android:id="@+id/sbutton42"
+                    android:layout_width="85dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="884dp"
+                    android:layout_marginStart="884dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="컴퓨터보안"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.243" />
+
+                <Button
+                    android:id="@+id/sbutton41"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="688dp"
+                    android:layout_marginStart="688dp"
+                    android:background="@drawable/sub_btn_wow"
+                    android:onClick="GoToMySearch"
+                    android:text="졸업프로젝트1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.767" />
+
+                <Button
+                    android:id="@+id/sbutton40"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="596dp"
+                    android:layout_marginStart="596dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="시멘틱웹"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.603" />
+
+                <Button
+                    android:id="@+id/sbutton39"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="656dp"
+                    android:layout_marginStart="656dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="가상현실"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.603" />
+
+                <Button
+                    android:id="@+id/sbutton38"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="780dp"
+                    android:layout_marginStart="780dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="게임프로그래밍"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.607" />
+
+                <Button
+                    android:id="@+id/sbutton37"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="776dp"
+                    android:layout_marginStart="776dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="HCI"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.555" />
+
+                <Button
+                    android:id="@+id/sbutton36"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="772dp"
+                    android:layout_marginStart="772dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="협동분산시스템"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.444" />
+
+                <Button
+                    android:id="@+id/sbutton35"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="776dp"
+                    android:layout_marginStart="776dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="소프트웨어공학"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.065" />
+
+                <Button
+                    android:id="@+id/sbutton34"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="716dp"
+                    android:layout_marginStart="716dp"
+                    android:background="@drawable/sub_btn_wow"
+                    android:onClick="GoToMySearch"
+                    android:text="산학협력프로젝트2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.825" />
+
+                <Button
+                    android:id="@+id/sbutton33"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="544dp"
+                    android:layout_marginStart="544dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="멀티미디어신호처리"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.723" />
+
+                <Button
+                    android:id="@+id/sbutton32"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="544dp"
+                    android:layout_marginStart="544dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="웹서비스"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.723" />
+
+                <Button
+                    android:id="@+id/sbutton31"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="544dp"
+                    android:layout_marginStart="544dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="컴퓨터비전"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.607" />
+
+                <Button
+                    android:id="@+id/sbutton30"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="652dp"
+                    android:layout_marginStart="652dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="데이터마이닝"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.523" />
+
+                <Button
+                    android:id="@+id/sbutton29"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="652dp"
+                    android:layout_marginStart="652dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="네트워크프로그래밍"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.444" />
+
+                <Button
+                    android:id="@+id/sbutton28"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="652dp"
+                    android:layout_marginStart="652dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="임베디드컴퓨팅"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.317" />
+
+                <Button
+                    android:id="@+id/sbutton27"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="652dp"
+                    android:layout_marginStart="652dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="암호학이론"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.242" />
+
+                <Button
+                    android:id="@+id/sbutton26"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="660dp"
+                    android:layout_marginStart="660dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="프로그래밍언어론"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.065" />
+
+                <Button
+                    android:id="@+id/sbutton25"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="544dp"
+                    android:layout_marginStart="544dp"
+                    android:background="@drawable/sub_btn_wow"
+                    android:onClick="GoToMySearch"
+                    android:text="산학협력프로젝트1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.942" />
+
+                <Button
+                    android:id="@+id/sbutton24"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="568dp"
+                    android:layout_marginStart="568dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="신호처리"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.886" />
+
+                <Button
+                    android:id="@+id/sbutton23"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="556dp"
+                    android:layout_marginStart="556dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="디지털영상처리"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.803" />
+
+                <Button
+                    android:id="@+id/sbutton22"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="544dp"
+                    android:layout_marginStart="544dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="컴퓨터그래픽스"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.651" />
+
+                <Button
+                    android:id="@+id/sbutton21"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="548dp"
+                    android:layout_marginStart="548dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="데이터베이스"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.523" />
+
+                <Button
+                    android:id="@+id/sbutton20"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="552dp"
+                    android:layout_marginStart="552dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="컴퓨터네트워크"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.463" />
+
+                <Button
+                    android:id="@+id/sbutton19"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="548dp"
+                    android:layout_marginStart="548dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="모바일프로그래밍"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.386" />
+
+                <Button
+                    android:id="@+id/sbutton18"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="548dp"
+                    android:layout_marginStart="548dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="운영체제"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.317" />
+
+                <Button
+                    android:id="@+id/sbutton17"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="536dp"
+                    android:layout_marginStart="536dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="알고리즘연습"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.123" />
+
+                <Button
+                    android:id="@+id/sbutton16"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="432dp"
+                    android:layout_marginStart="432dp"
+                    android:background="@drawable/sub_btn_wow"
+                    android:onClick="GoToMySearch"
+                    android:text="전공기초프로젝트2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.948" />
+
+                <Button
+                    android:id="@+id/sbutton15"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="432dp"
+                    android:layout_marginStart="432dp"
+                    android:background="@drawable/sub_btn_wow"
+                    android:onClick="GoToMySearch"
+                    android:text="소프트웨어학과세미나"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.848" />
+
+                <Button
+                    android:id="@+id/sbutton14"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="432dp"
+                    android:layout_marginStart="432dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="인공지능"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.725" />
+
+                <Button
+                    android:id="@+id/sbutton13"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="432dp"
+                    android:layout_marginStart="432dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="멀티미디어콘텐츠설계"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.644" />
+
+                <Button
+                    android:id="@+id/sbutton12"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="430dp"
+                    android:layout_marginStart="430dp"
+                    android:background="@drawable/sub_btn_wow"
+                    android:onClick="GoToMySearch"
+                    android:text="시스템 프로그래밍"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.384" />
+
+                <Button
+                    android:id="@+id/sbutton11"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="430dp"
+                    android:layout_marginStart="430dp"
+                    android:background="@drawable/sub_btn_wow"
+                    android:onClick="GoToMySearch"
+                    android:text="컴퓨터 구조"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.317" />
+
+                <Button
+                    android:id="@+id/sbutton10"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="430dp"
+                    android:layout_marginStart="430dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="컴퓨테이션이론"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.188" />
+
+                <Button
+                    android:id="@+id/sbutton9"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="430dp"
+                    android:layout_marginStart="430dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="알고리즘"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.123" />
+
+                <Button
+                    android:id="@+id/sbutton8"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="432dp"
+                    android:layout_marginStart="432dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="랜덤프로세스개론"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.029999971" />
+
+                <Button
+                    android:id="@+id/sbutton7"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginStart="320dp"
+                    android:background="@drawable/sub_btn_wow"
+                    android:onClick="GoToMySearch"
+                    android:text="전공기초프로젝트1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.953" />
+
+                <Button
+                    android:id="@+id/sbutton6"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="316dp"
+                    android:layout_marginStart="316dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="웹프로그래밍"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.782" />
+
+                <Button
+                    android:id="@+id/sbutton5"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="316dp"
+                    android:layout_marginStart="316dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="윈도우즈프로그래밍"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.657" />
+
+                <Button
+                    android:id="@+id/sbutton4"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginStart="320dp"
+                    android:background="@drawable/sub_btn_wow"
+                    android:onClick="GoToMySearch"
+                    android:text="자료구조"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.061" />
+
+                <Button
+                    android:id="@+id/sbutton3"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="212dp"
+                    android:layout_marginStart="212dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="C++프로그래밍"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.651" />
 
                 <ImageView
                     android:id="@+id/imageView4"
@@ -48,24 +650,43 @@
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/curri" />
 
                 <Button
-                    android:id="@+id/button15"
-                    android:layout_width="72dp"
-                    android:layout_height="41dp"
-                    android:layout_marginLeft="104dp"
-                    android:layout_marginStart="104dp"
-                    android:onClick="GoToSpecific"
-                    android:text="C언어"
+                    android:id="@+id/sbutton1"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="93dp"
+                    android:layout_marginStart="93dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="C프로그래밍"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.43" />
+                    app:layout_constraintVertical_bias="0.423" />
+
+                <Button
+                    android:id="@+id/sbutton2"
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="212dp"
+                    android:layout_marginStart="212dp"
+                    android:background="@drawable/sub_btn_select"
+                    android:onClick="GoToMySearch"
+                    android:text="JAVA프로그래밍"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.421" />
 
 
             </android.support.constraint.ConstraintLayout>
-        </HorizontalScrollView>
-    </ScrollView>
+        </ScrollView>
+    </HorizontalScrollView>
 
 </android.support.constraint.ConstraintLayout>
