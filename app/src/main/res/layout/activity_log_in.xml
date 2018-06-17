@@ -49,11 +49,12 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginStart="148dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginStart="132dp"
+        android:background="@drawable/y_btn"
         android:onClick="onButton1Clicked"
         android:text="로그인"
         app:layout_constraintBottom_toBottomOf="parent"

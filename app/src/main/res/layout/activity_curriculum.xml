@@ -42,9 +42,7 @@
                     android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/gradient"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="0dp" />
+                    app:srcCompat="@drawable/back2" />
 
                 <ImageView
                     android:id="@+id/imageView3"

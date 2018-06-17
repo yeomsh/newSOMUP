@@ -66,9 +66,10 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/y_btn"
         android:onClick="GoToLogin"
         android:text="완료"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -97,7 +98,7 @@
         <LinearLayout
             android:id="@+id/button_linear"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:orientation="horizontal"
             tools:layout_editor_absoluteX="9dp"
             tools:layout_editor_absoluteY="56dp">
@@ -107,6 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/g_btn"
                 android:onClick="showgrade1"
                 android:text="1학년" />
 
@@ -115,6 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/g_btn"
                 android:onClick="showgrade2"
                 android:text="2학년" />
 
@@ -123,6 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/g_btn"
                 android:onClick="showgrade3"
                 android:text="3학년" />
 
@@ -131,6 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/g_btn"
                 android:onClick="showgrade4"
                 android:text="4학년" />
 
