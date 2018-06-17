@@ -2,6 +2,7 @@ package com.example.kimsy.somup;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -63,6 +64,9 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     public void onSearchClicked(View v) {
+        check=false;
+        _essential.clear();
+        _select.clear();
         text=findViewById(R.id.subject);
         final String str[]={"1-1","1-2","2-1","2-2","3-1","3-2","4-1","4-2"};
         for(int i=7;i>=0;i--) {
@@ -72,7 +76,7 @@ public class SearchActivity extends AppCompatActivity {
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     Iterator<DataSnapshot> child = dataSnapshot.getChildren().iterator();
                     for (DataSnapshot data : dataSnapshot.getChildren()) {
-                        if (data.getKey().equals("알고리즘")) {
+                        if (data.getKey().equals(text.getText().toString())) {
                             String sb = data.getValue().toString();
                             sb = sb.replaceAll("[{]", "");
                             sb = sb.replaceAll("[}]", "");
@@ -127,7 +131,6 @@ public class SearchActivity extends AppCompatActivity {
 
         mAdapter = new ListViewAdapter(getApplicationContext());
         mListView.setAdapter(mAdapter);
-
         for(int i=0;i<_essential.size();i++){
             if(_essential.get(i)=="$"){
                 mAdapter.addItem(null,
@@ -135,9 +138,19 @@ public class SearchActivity extends AppCompatActivity {
                         "1");
             }
             else{
-                mAdapter.addItem(null,
-                        _essential.get(i),
-                        "2");
+                if(!_essential.get(i).equals("$")) {
+                    mAdapter.addItem(null,
+                            "필수",
+                            _essential.get(i));
+                    for(int j=0;j<list.size();j++){
+                        if(_essential.get(i).equals(list.get(j))){
+
+                        }
+                        else{
+
+                        }
+                    }
+                }
             }
         }
         for(int i=0;i<_select.size();i++){
@@ -147,10 +160,18 @@ public class SearchActivity extends AppCompatActivity {
                         "3");
             }
             else{
-                if(_select.get(i)=="$") {
+                if(!_select.get(i).equals("$")) {
                     mAdapter.addItem(null,
-                            _select.get(i),
-                            "4");
+                            "선택",
+                            _select.get(i));
+                    for(int j=0;j<list.size();j++){
+                        if(_select.get(i).equals(list.get(j))){
+
+                        }
+                        else {
+
+                        }
+                    }
                 }
             }
         }
