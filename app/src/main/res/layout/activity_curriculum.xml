@@ -347,7 +347,7 @@
                     app:layout_constraintVertical_bias="0.886" />
 
                 <Button
-                    android:id="@+id/sbutton23"
+                    android:id="@+id/sbutton22"
                     android:layout_width="85dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="556dp"
@@ -361,7 +361,7 @@
                     app:layout_constraintVertical_bias="0.803" />
 
                 <Button
-                    android:id="@+id/sbutton22"
+                    android:id="@+id/sbutton23"
                     android:layout_width="85dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="544dp"
