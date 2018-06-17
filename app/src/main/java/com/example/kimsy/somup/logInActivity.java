@@ -89,11 +89,11 @@ public class logInActivity extends AppCompatActivity {
 
                         }else{
                             //비밀번호가 다를 경우
-                            Toast.makeText(getApplicationContext(), "비밀번호를 확인하십시오.", Toast.LENGTH_SHORT).show();
+
                         }
                     }else{
                         //아이디가 없을 경우
-                        Toast.makeText(getApplicationContext(), "아이디를 확인하십시오.", Toast.LENGTH_SHORT).show();
+
 
                     }
                 }

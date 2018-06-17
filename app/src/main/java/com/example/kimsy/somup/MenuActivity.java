@@ -25,6 +25,7 @@ public class MenuActivity extends AppCompatActivity {
     public EditText pw;
     public EditText num;
     public EditText subject;
+    public EditText name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +38,7 @@ public class MenuActivity extends AppCompatActivity {
         id=findViewById(R.id.id);
         pw=findViewById(R.id.pw);
         num=findViewById(R.id.std_id);
+        name=findViewById(R.id.name);
       //  DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("sw/students");
        // DatabaseReference rDatabase = mDatabase.child("students");
         //객체 생성후 삽입하기
@@ -76,7 +78,7 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent=new Intent(this, Menu2Activity.class);
         intent.putExtra("id", id.getText().toString());
         intent.putExtra("password", pw.getText().toString());
-        intent.putExtra("name", "염상희");
+        intent.putExtra("name", name.getText().toString());
         intent.putExtra("num", num.getText().toString());
 
         startActivity(intent);

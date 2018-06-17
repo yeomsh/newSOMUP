@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -41,9 +42,11 @@ public class SearchActivity extends AppCompatActivity {
     public ArrayList<String> _select;
     public ArrayList<String> _essential;
     public boolean check=false;
+    int img;
     ArrayList<Subject> list;
     String str1;
     String str2;
+    ImageView image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         btn=findViewById(R.id.search);
@@ -139,17 +142,18 @@ public class SearchActivity extends AppCompatActivity {
             }
             else{
                 if(!_essential.get(i).equals("$")) {
-                    mAdapter.addItem(null,
-                            "필수",
-                            _essential.get(i));
+                    boolean flag=false;
                     for(int j=0;j<list.size();j++){
                         if(_essential.get(i).equals(list.get(j))){
-
-                        }
-                        else{
-
+                            flag=true;
+                            img=R.drawable.checked;
+                            break;
                         }
                     }
+                    if(flag==false)img=R.drawable.unchecked;
+                    mAdapter.addItem(ContextCompat.getDrawable(this, img),
+                            "필수",
+                            _essential.get(i));
                 }
             }
         }
@@ -161,17 +165,18 @@ public class SearchActivity extends AppCompatActivity {
             }
             else{
                 if(!_select.get(i).equals("$")) {
-                    mAdapter.addItem(null,
-                            "선택",
-                            _select.get(i));
+                    boolean flag=false;
                     for(int j=0;j<list.size();j++){
                         if(_select.get(i).equals(list.get(j))){
-
-                        }
-                        else {
-
+                            flag=true;
+                            img=R.drawable.s_checked;
+                            break;
                         }
                     }
+                    if(flag==false)img=R.drawable.s_unchecked;
+                    mAdapter.addItem(ContextCompat.getDrawable(this, img),
+                            "선택",
+                            _select.get(i));
                 }
             }
         }
