@@ -46,6 +46,7 @@ public class SearchActivity extends AppCompatActivity {
     ArrayList<Subject> list;
     String str1;
     String str2;
+    String str3="null";
     ImageView image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +57,7 @@ public class SearchActivity extends AppCompatActivity {
         _essential=new ArrayList<>();
         _select=new ArrayList<>();
         list = (ArrayList<Subject>) getIntent().getSerializableExtra("sub");
+        str3=getIntent().getStringExtra("btn_text");
 
         //       Toast.makeText(getApplicationContext(),list.size()+"",Toast.LENGTH_SHORT).show();
         mListView = (ListView) findViewById(R.id.listView);
@@ -63,9 +65,71 @@ public class SearchActivity extends AppCompatActivity {
         mAdapter = new ListViewAdapter(this);
         mListView.setAdapter(mAdapter);
 
+        if(str3!="null") {
+
+            onSearch(str3);
+        }
 
     }
 
+    public void onSearch(final String str3){
+        check=false;
+        _essential.clear();
+        _select.clear();
+        text=findViewById(R.id.subject);
+        text.setText(str3);
+        final String str[]={"1-1","1-2","2-1","2-2","3-1","3-2","4-1","4-2"};
+        for(int i=7;i>=0;i--) {
+            DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("sw/2017/Subject/"+str[i]);
+            mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    Iterator<DataSnapshot> child = dataSnapshot.getChildren().iterator();
+                    for (DataSnapshot data : dataSnapshot.getChildren()) {
+                        if (data.getKey().equals(str3)) {
+                            String sb = data.getValue().toString();
+                            sb = sb.replaceAll("[{]", "");
+                            sb = sb.replaceAll("[}]", "");
+                            String[] arStr = sb.split("\\s");
+                            String[] select_ = arStr[0].split("=");
+                            String[] essential_ = arStr[1].split("=");
+                            select = select_[1].split(",");
+                            essential = essential_[1].split(",");
+                            for (int i = 0; i < select.length; i++)
+                                _select.add(select[i]);
+                            for (int i = 0; i < essential.length; i++)
+                                _essential.add(essential[i]);
+                            check=true;
+                        }
+                        if(check) {
+                            for (int j = 0; j < essential.length; j++)
+                                if (data.getKey().equals(essential[j])) {
+                                    String sb = data.getValue().toString();
+                                    sb = sb.replaceAll("[{]", "");
+                                    sb = sb.replaceAll("[}]", "");
+                                    String[] arStr = sb.split("\\s");
+                                    String[] essential_ = arStr[1].split("=");
+                                    String[] essential2 = essential_[1].split(",");
+                                    for (int i = 0; i < essential2.length; i++)
+                                        _essential.add(essential2[i]);
+                                }
+                            showList();
+                        }
+//                            Intent intent = new Intent(getApplicationContext(), curricu.class);
+//                            intent.putExtra("sub", sb);
+//                            startActivity(intent);
+                        //                          break;
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+
+        }
+    }
     public void onSearchClicked(View v) {
         check=false;
         _essential.clear();
