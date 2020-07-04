@@ -17,10 +17,12 @@ public class MainActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
     }
 
+
     public void onLoginBtnClicked(View v){
         Intent intent=new Intent(this, logInActivity.class);
         startActivity(intent);
     }
+
 
     public void onRegisterBtnClicked(View v){
         Intent intent=new Intent(this, MenuActivity.class);

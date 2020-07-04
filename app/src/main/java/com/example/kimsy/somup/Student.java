@@ -3,11 +3,11 @@ package com.example.kimsy.somup;
 import java.util.ArrayList;
 
 public class Student {
-    private String _id;
-    private String _password;
-    private String _name;
-    private int _num;
-    public ArrayList<String> subject;
+    private String _id;//로그인 시 사용하는 아이디
+    private String _password;//로그인 시 사용하는 비밀번호
+    private String _name;//본인의 이름
+    private int _num;//본인의 학번
+    public ArrayList<String> subject;//수강한 과목
 
     public Student() {
         this._id = null;

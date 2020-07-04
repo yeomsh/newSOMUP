@@ -85,10 +85,6 @@ public class Menu2Activity extends AppCompatActivity {
         sub_check[43]=(CheckBox)findViewById(R.id.checkBox44);
         sub_check[44]=(CheckBox)findViewById(R.id.checkBox45);
 
-        //grade1_linear=(LinearLayout)findViewById(R.id.grade1_linear);
-        //grade2_linear=(LinearLayout)findViewById(R.id.grade2_linear);
-        //grade3_linear=(LinearLayout)findViewById(R.id.grade3_linear);
-        //grade4_linear=(LinearLayout)findViewById(R.id.grade4_linear);
 
         grade1_scroll=(android.widget.ScrollView)findViewById(R.id.grade1_scroll);
         grade2_scroll=(android.widget.ScrollView)findViewById(R.id.grade2_scroll);
